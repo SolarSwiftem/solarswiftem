@@ -8,7 +8,31 @@
 body {
 	background-color: #D2D2D2;
 	font-family:candara,arial;font-size: 12pt;color:#FFFFFF;
+    background-image: url("bg8.png");
+    	background-repeat: no-repeat;
+    		background-size:100% auto;
+	background-position: 250px 0px; 
+
+
 	
+}
+
+.Centerer
+{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.Centered
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#centerDiv img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #heading { width:40em;padding:5px;align:center; margin: 0 auto}
@@ -28,16 +52,18 @@ body {
 
 #centerDiv { width: 800px; 
 				border: 1px solid white;
+				border-radius: 25px;
 			
 				color:white;
 				        /*background-image: url("/Users/Matt_Policane/Documents/webDev/leftDiv.jpg");*/
 				text-align: left; 
-				background-color: #B7B3BA;
 	margin: auto;
     width: 60%;
     padding: 0px;
     padding-bottom:0px; /* Height of the footer element */
     padding-left: 0px;
+    background-color: rgba(200,200,200,0.7);
+
 
 }
 
@@ -63,7 +89,15 @@ body {
     padding-bottom:0px; /* Height of the footer element */
     padding-left: 0px;
 }
-#footing { text-align: center; width:40em; align: center; padding:5px;position: fixed;bottom: 0; /*border: 1px solid red*/; margin-left: 150px;}
+.footing {  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+
+	}
 .link-button-wrapper {
     width: 200px;
     height: 40px;

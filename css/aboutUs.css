@@ -73,7 +73,11 @@ body {
 				 margin-right: 30px;
 				 background-color: lightblue;
 }*/
-#footing { text-align: center; width:40em; align: center; padding:5px;position: fixed;bottom: 0; /*border: 1px solid red*/; margin-left: 150px;}
+#footing {  clear: left;
+                width: 100%;
+                background: #BDBDBD;
+                text-align: center;
+                padding: 4px 0}
 .link-button-wrapper {
     width: 200px;
     height: 40px;

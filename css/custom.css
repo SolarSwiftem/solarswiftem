@@ -85,6 +85,8 @@ body {
 
 
 }
+
+
 #rightcolumn { 	 text-align: center;
 	margin: auto;
     width: 30%;
@@ -130,7 +132,8 @@ body {
     height: 40px;
     box-shadow: inset 0px 1px 0px 0px #ffffff;
     border-radius: 4px;
-    background-color:  #097BC0;;
+	background-color: rgba(0,128,255,0.4);
+
     box-shadow: 0px 2px 4px gray;
     display: block;
     border:1px solid  #f7f8f8;;

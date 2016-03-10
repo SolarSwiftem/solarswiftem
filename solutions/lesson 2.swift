@@ -8,3 +8,4 @@ print(y)
 
 var myPlanet = "My planet lies within the Solar Swiftem!"
 
+print(myPlanet)

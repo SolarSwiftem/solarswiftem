@@ -124,7 +124,7 @@ body {
    
 
 		}
-.link-button-wrapper {
+/*.link-button-wrapper {
     width: 200px;
     height: 40px;
     box-shadow: inset 0px 1px 0px 0px #ffffff;
@@ -134,8 +134,8 @@ body {
     box-shadow: 0px 2px 4px gray;
     display: block;
     border:1px solid  #f7f8f8;;
-    /*margin-left: 300px;
-    margin-top: 100px;*/
+    margin-left: 300px;
+    margin-top: 100px;
 	margin: auto;
 }
 .link-button-wrapper > a {
@@ -146,14 +146,15 @@ body {
     width:100%;
 }
 .link-button-wrapper > a > h6 {
-    /*margin: 0 auto;*/
+    /*margin: 0 auto;
     display: table-cell;
     vertical-align: middle;
     color: #f7f8f8;
     font-size: 18px;
     font-family: cabinregular;
     text-align: center;
-}
+}*/
+
 /* Dropdown Button */
 .dropbtn {
     background-color: #4CAF50;

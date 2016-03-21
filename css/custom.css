@@ -124,7 +124,12 @@ body {
    
 
 		}
+<<<<<<< HEAD
 /*.link-button-wrapper {
+=======
+/*
+.link-button-wrapper {
+>>>>>>> pages
     width: 200px;
     height: 40px;
     box-shadow: inset 0px 1px 0px 0px #ffffff;
@@ -146,7 +151,11 @@ body {
     width:100%;
 }
 .link-button-wrapper > a > h6 {
+<<<<<<< HEAD
     /*margin: 0 auto;
+=======
+    margin: 0 auto;
+>>>>>>> pages
     display: table-cell;
     vertical-align: middle;
     color: #f7f8f8;
@@ -154,7 +163,10 @@ body {
     font-family: cabinregular;
     text-align: center;
 }*/
+<<<<<<< HEAD
 
+=======
+>>>>>>> pages
 /* Dropdown Button */
 .dropbtn {
     background-color: #4CAF50;

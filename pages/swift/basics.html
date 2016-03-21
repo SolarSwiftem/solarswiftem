@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="icon" href="icon.png">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>The Solar Swiftem</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/simple-sidebar.css" rel="stylesheet">
+    <link href="../../css/basics.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <style>
+.shakeimage{
+position:relative
+}
+</style>
+<script language="JavaScript1.2">
+
+/*
+Shake image script (onMouseover)- 
+(c) Dynamic Drive (www.dynamicdrive.com)
+For full source code, usage terms, and 100's more DHTML scripts, visit http://dynamicdrive.com
+*/
+
+//configure shake degree (where larger # equals greater shake)
+var rector=3
+
+///////DONE EDITTING///////////
+var stopit=0 
+var a=1
+
+function init(which){
+stopit=0
+shake=which
+shake.style.left=0
+shake.style.top=0
+}
+
+function rattleimage(){
+if ((!document.all&&!document.getElementById)||stopit==1)
+return
+if (a==1){
+shake.style.top=parseInt(shake.style.top)+rector+"px"
+}
+else if (a==2){
+shake.style.left=parseInt(shake.style.left)+rector+"px"
+}
+else if (a==3){
+shake.style.top=parseInt(shake.style.top)-rector+"px"
+}
+else{
+shake.style.left=parseInt(shake.style.left)-rector+"px"
+}
+if (a<4)
+a++
+else
+a=1
+setTimeout("rattleimage()",50)
+}
+
+function stoprattle(which){
+stopit=1
+which.style.left=0
+which.style.top=0
+}
+
+</script>
+
+   
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="../../index.html">
+                        The Solar Swiftem
+                    </a>
+                </li>
+                <li>
+                    <a href="installation.html">Installation</a>
+                </li>
+               <li>
+<<<<<<< HEAD:basics.html
+                    <a href="basics.html">Planet Printing</a>
+=======
+                    <a href="basics.html">Printing</a>
+>>>>>>> pages:pages/swift/basics.html
+                </li>
+                <li>
+                    <a href="loops.html">Loops</a>
+                </li>
+                <li>
+                    <a href="conditionals.html">Conditionals</a>
+                </li>
+                <li>
+                    <a href="variables.html">Arrays</a>
+                </li>
+                <li>
+                    <a href="functions.html">Functions</a>
+                </li>
+                
+                <li>
+                    <a href="#">Test Yourself</a>
+                </li>
+              
+                
+            
+            </ul>
+            
+           
+            
+        </div>
+        <br>
+        <div id="heading">
+        <h1 align="center"> The Solar Swiftem </h1>
+        <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a> -->
+       
+    
+        </div> <!--heading -->
+        <br>
+    
+		
+        
+<div id="centerDiv" class="jumbotron">
+<h3 align="center">Lesson 1: Printing</h3>
+
+<p>In computer programming printing is used to display some text on the screen (nothing to do with printing paper). It will be useful in all the swift tutorials.</p>
+
+<h4>Goal</h4>
+<p>In this lesson you will learn how to set up a new program in xcode. You will learn how to write code to print some text to the screen.</p>
+
+
+<h4>Demo</h4>
+<p>#############################</p>
+
+<h4>Example</h4>
+<p>Download a copy of the project from the demo by clicking on this link.</p>
+<a href="http://solarswiftem.com/examples/swift/lesson1" target="_blank">Download</a>
+
+<h4>Exercises</h4>
+<ul>
+<li>Write a program that prints your name</li>
+<li>Write a program that prints your address on separate lines</li>
+<li>Comment out your address</li>
+</ul>
+
+<h4>Answers</h4>
+<p>#########################</p>
+
+</div>
+<div id="rightcolumn">
+    <div class="link-button-wrapper">
+    <a href="loops.html">
+<<<<<<< HEAD:basics.html
+         <img src="link1.png"class="shakeimage" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this);top.focus()" onClick="top.focus()" >
+=======
+         <img src="../../img/link1.png"class="shakeimage" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this);top.focus()" onClick="top.focus()" >
+>>>>>>> pages:pages/swift/basics.html
+    </a>
+</div>
+
+
+</div>
+<div id="moveOn">
+    <p>Continue the journey</p>
+</div>
+<!--div class="footing"> -->
+ <!--Copyright © The Solar Swiftem 2015 | <a href="/privacy_policy">Privacy Policy</a>  -->
+
+
+
+ <p1> </p1></div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+       <!-- <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>The Solar Swiftem</h1>
+                        
+                    </div>
+                </div>
+            </div>
+                <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+
+        </div>
+        
+        <p1> Hello </p1>
+        <!-- /#page-content-wrapper -->
+
+    </div> -->
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    
+    <a href="https://www.facebook.com/solarswiftem">
+		<img src="../../img/facebook.png" alt="HTML tutorial" style="width:42px;height:42px;border:0; position:fixed; right:0px; align: right; top: 0px;">
+	</a>
+	<a href="https://twitter.com/solarswiftem">
+		<img src="../../img/twitter.png" alt="HTML tutorial" style="width:42px;height:42px;border:0; position:fixed; right:0px; align: right; top: 0px; right: 45px;">
+	</a>
+		<a href="https://developer.apple.com/swift/">
+		<img src="../../img/swiftLogo.png" alt="HTML tutorial" style="width:42px;height:42px;border:0; position:fixed; right:0px; align: right; top: 0px; right: 90px;">
+	</a>
+
+
+
+<br>
+
+</body>
+
+</html>

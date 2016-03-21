@@ -23,6 +23,62 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+.shakeimage{
+position:relative
+}
+</style>
+<script language="JavaScript1.2">
+
+/*
+Shake image script (onMouseover)- 
+(c) Dynamic Drive (www.dynamicdrive.com)
+For full source code, usage terms, and 100's more DHTML scripts, visit http://dynamicdrive.com
+*/
+
+//configure shake degree (where larger # equals greater shake)
+var rector=3
+
+///////DONE EDITTING///////////
+var stopit=0 
+var a=1
+
+function init(which){
+stopit=0
+shake=which
+shake.style.left=0
+shake.style.top=0
+}
+
+function rattleimage(){
+if ((!document.all&&!document.getElementById)||stopit==1)
+return
+if (a==1){
+shake.style.top=parseInt(shake.style.top)+rector+"px"
+}
+else if (a==2){
+shake.style.left=parseInt(shake.style.left)+rector+"px"
+}
+else if (a==3){
+shake.style.top=parseInt(shake.style.top)-rector+"px"
+}
+else{
+shake.style.left=parseInt(shake.style.left)-rector+"px"
+}
+if (a<4)
+a++
+else
+a=1
+setTimeout("rattleimage()",50)
+}
+
+function stoprattle(which){
+stopit=1
+which.style.left=0
+which.style.top=0
+}
+
+</script>
 
 </head>
 
@@ -30,7 +86,7 @@
 
     <div id="wrapper">
 
-       <!-- Sidebar -->
+        <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
@@ -56,33 +112,33 @@
                 <li>
                     <a href="segues.html">Segues</a>
                 </li>
-
+              
                 <li>
                     <a href="advancedui.html">Advanced UI</a>
                 </li>
                  <li>
                     <a href="wholeapp.html">A Whole App</a>
                 </li>
-
-
-
+                
+                
+            
             </ul>
-
-
-
-
+            
+            
+           
+            
         </div>
         <br>
         <div id="heading">
         <h1 align="center"> The Solar Swiftem </h1>
         <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a> -->
-
-
+       
+    
         </div> <!--heading -->
         <br>
-
-
-
+    
+		
+        
 <div id="centerDiv">
 <h3 align="center">Lesson 4: Autolayout </h3>
  <p>So far we’ve been getting XCode to automatically layout our apps for us. Sometimes it doesn’t come out very nicely. You can use “autolayout” to tell the app how you want it to look. You can make it look good no matter which device it runs on.</p>
@@ -92,13 +148,13 @@
 <h4>Demonstration:</h4>
 
 <p>Videos will be added after/during reading week</p>
-
+ 
 <p>The code file from the video should be attached. Write this before the video is recorded and use it to guide the video</p>
-
+ 
 <h4>Exercises:</h4>
 <p>(Aim to write 3-5 exercise questions of varying difficulty. Make sure they highlight the different types of tricks/challenges that your concept may possess.) </p>
-
-<ul>
+ 
+<ul> 
 <li>Design an app using views and run it on different devices. Make sure the app looks nice on all the different screens.</li>
 <li>Look at the example apps for the lesson. Can you use autolayout to make them look good?
 </li>
@@ -107,9 +163,9 @@
 
 <h4>Answers:</h4>
 <p>Attach source code files for programs that solve the exercise questions. Make sure they are well commented</p>
-
-
-
+ 
+ 
+ 
 
 
 
@@ -117,7 +173,7 @@
 <div id="rightcolumn">
     <div class="link-button-wrapper">
     <a href="outlets.html">
-         <img src="img/link1.png">
+         <img src="../../img/link1.png"class="shakeimage" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this);top.focus()" onClick="top.focus()">
     </a>
 </div>
 
@@ -139,18 +195,18 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>The Solar Swiftem</h1>
-
+                        
                     </div>
                 </div>
             </div>
                 <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
 
         </div>
-
+        
         <p1> Hello </p1>
         <!-- /#page-content-wrapper -->
 
-    </div>
+    </div> 
     <!-- /#wrapper -->
 
     <!-- jQuery -->
@@ -166,12 +222,15 @@
         $("#wrapper").toggleClass("toggled");
     });
     </script>
-
+    
     <a href="https://www.facebook.com/solarswiftem">
-		<img src="img/facebook.png" alt="HTML tutorial" style="width:42px;height:42px;border:0; position:fixed; right:0px; align: right; top: 0px;">
+		<img src="../../img/facebook.png" alt="HTML tutorial" style="width:42px;height:42px;border:0; position:fixed; right:0px; align: right; top: 0px;">
 	</a>
 		<a href="https://twitter.com/solarswiftem">
-		<img src="img/twitter.png" alt="HTML tutorial" style="width:42px;height:42px;border:0; position:fixed; right:0px; align: right; top: 0px; right: 45px;">
+		<img src="../../img/twitter.png" alt="HTML tutorial" style="width:42px;height:42px;border:0; position:fixed; right:0px; align: right; top: 0px; right: 45px;">
+	</a>
+		<a href="https://developer.apple.com/swift/">
+		<img src="../../img/swiftLogo.png" alt="HTML tutorial" style="width:42px;height:42px;border:0; position:fixed; right:0px; align: right; top: 0px; right: 90px;">
 	</a>
 
 </body>

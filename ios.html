@@ -24,6 +24,63 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+ <style>
+.shakeimage{
+position:relative
+}
+</style>
+<script language="JavaScript1.2">
+
+/*
+Shake image script (onMouseover)- 
+(c) Dynamic Drive (www.dynamicdrive.com)
+For full source code, usage terms, and 100's more DHTML scripts, visit http://dynamicdrive.com
+*/
+
+//configure shake degree (where larger # equals greater shake)
+var rector=3
+
+///////DONE EDITTING///////////
+var stopit=0 
+var a=1
+
+function init(which){
+stopit=0
+shake=which
+shake.style.left=0
+shake.style.top=0
+}
+
+function rattleimage(){
+if ((!document.all&&!document.getElementById)||stopit==1)
+return
+if (a==1){
+shake.style.top=parseInt(shake.style.top)+rector+"px"
+}
+else if (a==2){
+shake.style.left=parseInt(shake.style.left)+rector+"px"
+}
+else if (a==3){
+shake.style.top=parseInt(shake.style.top)-rector+"px"
+}
+else{
+shake.style.left=parseInt(shake.style.left)-rector+"px"
+}
+if (a<4)
+a++
+else
+a=1
+setTimeout("rattleimage()",50)
+}
+
+function stoprattle(which){
+stopit=1
+which.style.left=0
+which.style.top=0
+}
+
+</script>
+
 
 </head>
 
@@ -60,42 +117,43 @@
                 <li>
                     <a href="pages/ios/segues.html">Segues</a>
                 </li>
-
+              
                 <li>
                     <a href="pages/ios/advancedui.html">Advanced UI</a>
                 </li>
                  <li>
                     <a href="pages/ios/wholeapp.html">A Whole App</a>
                 </li>
-
-
-
+                
+                
+            
             </ul>
-
-
-
+            
+           
+            
         </div>
         <br>
         <div id="heading">
         <!--<h1 align="center"> The Solar Swiftem </h1> -->
         <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a> -->
-
-
+       
+    
 
         </div> <!--heading -->
         <br>
-
+        
 <div class="container-fluid" id="maincontent">
 <h2> Welcome to Planet iOS! </h2>
 <h4> Time to start your new journey and build your first app! </h4>
 
 <div class="link-button-wrapper">
     <a href="newproject.html">
-        <h6>...and we have lift off!</h6>
+                     <img src="link1.png"class="shakeimage" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this);top.focus()" onClick="top.focus()">
+
     </a>
 </div>
 <!--<p>
-We feel that there are not enough tutorials out there that allow children to make their own applications for iPhone and iPad. Therefore, we have decided to make a series of tutorial videos which guide you through the steps needed to make an app which you can download straight onto your phone or tablet. We will start by taking you through a series of Planets teaching you the basic programming concepts, before showing you how you can put all of this knowledge together in order to make your app.
+We feel that there are not enough tutorials out there that allow children to make their own applications for iPhone and iPad. Therefore, we have decided to make a series of tutorial videos which guide you through the steps needed to make an app which you can download straight onto your phone or tablet. We will start by taking you through a series of Planets teaching you the basic programming concepts, before showing you how you can put all of this knowledge together in order to make your app. 
 </p>
 
 <p>
@@ -128,14 +186,14 @@ Please click this link to find instructions on the software that you will need i
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>The Solar Swiftem</h1>
-
+                        
                     </div>
                 </div>
             </div>
                 <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
 
         </div>
-
+        
         <p1> Hello </p1>
         <!-- /#page-content-wrapper -->
 
@@ -158,10 +216,13 @@ Please click this link to find instructions on the software that you will need i
     </script>
 
 	<a href="https://www.facebook.com/solarswiftem">
-		<img src="img/facebook.png" alt="HTML tutorial" style="width:42px;height:42px;border:0; position:fixed; right:0px; align: right; top: 0px;">
+		<img src="facebook.png" alt="HTML tutorial" style="width:42px;height:42px;border:0; position:fixed; right:0px; align: right; top: 0px;">
 	</a>
 	<a href="https://twitter.com/solarswiftem">
-		<img src="img/twitter.png" alt="HTML tutorial" style="width:42px;height:42px;border:0; position:fixed; right:0px; align: right; top: 0px; right: 45px;">
+		<img src="twitter.png" alt="HTML tutorial" style="width:42px;height:42px;border:0; position:fixed; right:0px; align: right; top: 0px; right: 45px;">
+	</a>
+		<a href="https://developer.apple.com/swift/">
+		<img src="img/swiftLogo.png" alt="HTML tutorial" style="width:42px;height:42px;border:0; position:fixed; right:0px; align: right; top: 0px; right: 90px;">
 	</a>
 
 </div>

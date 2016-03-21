@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<link rel="icon" href="icon.png">
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,12 +10,13 @@
     <meta name="author" content="">
 
     <title>The Solar Swiftem</title>
-
+	<link rel="icon" href="icon.png">
     <!-- Bootstrap Core CSS -->
-    <link href="../../css/basics.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../../css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,7 +25,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-      <style>
+     <style>
 .shakeimage{
 position:relative
 }
@@ -86,39 +87,43 @@ which.style.top=0
 
 <body>
 
+
+
+
     <div id="wrapper">
 
-          <!-- Sidebar -->
+        <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a href="../../index.html">
+                    <a href="index.html">
                         The Solar Swiftem
                     </a>
                 </li>
-                <li>
-                    <a href="installation.html">Installation</a>
+                 <li>
+                    <a href="pages/swift/installation.html">Installation</a>
                 </li>
-               <li>
-                    <a href="basics.html">Printing</a>
-                </li>
-                <li>
-                    <a href="loops.html">Loops</a>
+                 <li>
+                    <a href="pages/swift/basics.html">Basics</a>
                 </li>
                 <li>
-                    <a href="conditionals.html">Conditionals</a>
+                    <a href="pages/swift/loops.html">Loops</a>
                 </li>
                 <li>
-                    <a href="variables.html">Arrays</a>
+                    <a href="pages/swift/conditionals.html">Conditionals</a>
+                </li>
+                  <li>
+                    <a href="pages/swift/variables.html">Arrays</a>
                 </li>
                 <li>
-                    <a href="functions.html">Functions</a>
+                    <a href="pages/swift/functions.html">Functions</a>
                 </li>
-                
+              
                 <li>
                     <a href="#">Test Yourself</a>
                 </li>
-        
+             
+                
                 
             
             </ul>
@@ -128,65 +133,44 @@ which.style.top=0
         </div>
         <br>
         <div id="heading">
-        <h1 align="center"> The Solar Swiftem </h1>
+        <!--<h1 align="center"> The Solar Swiftem </h1> -->
         <!--<a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a> -->
        
     
+
         </div> <!--heading -->
         <br>
-    
-		
         
-<div id="centerDiv">
-<h3 align="center">Lesson 5: Variables</h3>
-
-<h4>Objective:</h4>
-<p>In this lesson you will learn how to use collection types such as arrays and dictionaries. These are useful for managing groups of the same data type.
-
-</p>
+<div class="container-fluid" id="maincontent">
+<h2> Welcome to Planet Swift! </h2>
+<h4> Start your first journey and learn the Swift basics! </h4>
 
 
-<h4>Demonstration:</h4>
-<p>Videos will be added after/during reading week</p>
 
-<p>The code file from the video should be attached. Write this before the video is recorded and use it to guide the video</p>
+<div class="link-button-wrapper">
+    <a href="pages/swift/installation.html">
+             <img src="link1.png"class="shakeimage" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this);top.focus()" onClick="top.focus()">
 
+        <!--<h6>Take Off!</h6>-->
 
-<h4>Exercises:</h4>
-<ul>
-<li>Write a program that fills an array of size 5 with names and uses a loop (of your choice) to print it</li>
-<li>Write a program that prints you address on separate lines</li>
-<li>Comment out your address</li>
-</ul>
-
-<h4>Answers:</h4>
-<p><<Attach source code files for programs that solve the exercise questions. Make sure they are well commented>></p>
-
-</div>
-<div id="rightcolumn">
-    <div class="link-button-wrapper">
-    <a href="functions.html">
-         <img src="../../img/link1.png"class="shakeimage" onMouseover="init(this);rattleimage()" onMouseout="stoprattle(this);top.focus()" onClick="top.focus()">
     </a>
 </div>
 
 
 </div>
-<div id="moveOn">
-    <p>Carry on the journey</p>
-</div>
 
-<!--<div id="footing">-->
+
+<!--<div id = "footing">-->
 <!-- Copyright © The Solar Swiftem 2015 | <a href="/privacy_policy">Privacy Policy</a>  -->
 
 
- <p1> </p1></div>
-        <!-- /#sidebar-wrapper -->
+	<!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
-       <!-- <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
+       <!-- <div id="page-content-wrapper"> -->
+          <!--  <div class="container-fluid"> -->
+                <!-- 
+<div class="row">
                     <div class="col-lg-12">
                         <h1>The Solar Swiftem</h1>
                         
@@ -198,34 +182,40 @@ which.style.top=0
         </div>
         
         <p1> Hello </p1>
-        <!-- /#page-content-wrapper -->
+        <!~~ /#page-content-wrapper ~~>
 
-    </div> 
-    <!-- /#wrapper -->
+    </div>
+    <!~~ /#wrapper ~~>
 
-    <!-- jQuery -->
+
+   <!~~ jQuery ~~>
     <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
+    <!~~ Bootstrap Core JavaScript ~~>
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Menu Toggle Script -->
+    <!~~ Menu Toggle Script ~~>
     <script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
     </script>
-    
-    <a href="https://www.facebook.com/solarswiftem">
-		<img src="../../img/facebook.png" alt="HTML tutorial" style="width:42px;height:42px;border:0; position:fixed; right:0px; align: right; top: 0px;">
+ -->
+
+	<a href="https://www.facebook.com/solarswiftem">
+		<img src="img/facebook.png" alt="HTML tutorial" style="width:42px;height:42px;border:0; position:fixed; right:0px; align: right; top: 0px;">
 	</a>
 	<a href="https://twitter.com/solarswiftem">
-		<img src="../../img/twitter.png" alt="HTML tutorial" style="width:42px;height:42px;border:0; position:fixed; right:0px; align: right; top: 0px; right: 45px;">
+		<img src="img/twitter.png" alt="HTML tutorial" style="width:42px;height:42px;border:0; position:fixed; right:0px; align: right; top: 0px; right: 45px;">
 	</a>
-		<a href="https://developer.apple.com/swift/">
-		<img src="../../img/swiftLogo.png" alt="HTML tutorial" style="width:42px;height:42px;border:0; position:fixed; right:0px; align: right; top: 0px; right: 90px;">
+	<a href="https://developer.apple.com/swift/">
+		<img src="img/swiftLogo.png" alt="HTML tutorial" style="width:42px;height:42px;border:0; position:fixed; right:0px; align: right; top: 0px; right: 90px;">
 	</a>
+	
+
+
+</div>
 </body>
 
 </html>

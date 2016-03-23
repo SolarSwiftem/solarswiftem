@@ -1,3 +1,4 @@
+// Question 1
 var i = 1
 
 do {
@@ -5,6 +6,7 @@ do {
 	i++
 } while i <= 11
 
+// Question 2
 var j = 0
 
 do {
@@ -12,6 +14,7 @@ do {
 	j+=5
 } while j <= 50
 
+// Question 3
 var k = 10
 
 do {

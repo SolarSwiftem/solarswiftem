@@ -1,3 +1,5 @@
+//Answers to Lesson 3:  For Loops
+
 // Question 1
 for var i=1; i<11; i++ {
 	print(i)

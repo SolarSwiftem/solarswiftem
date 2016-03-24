@@ -25,7 +25,8 @@
 }
 
 body {
-	margin:0;
+/* PhYDroWM */
+	margin:0; 
 	padding:0;
 	height:100%;
     background-image: url("bgnew.jpg");
@@ -34,6 +35,8 @@ body {
 	/* background-position: 250px 0px; */
 	background-size:100% auto;
 	font-family:candara,arial;font-size: 12pt;color:#FFFFFF;
+	 overflow-y:hidden;
+	  overflow-x:hidden;
 	
 }
 
